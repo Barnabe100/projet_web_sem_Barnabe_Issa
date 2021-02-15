@@ -1,0 +1,435 @@
+@prefix : <http://fasodbpedia-dataset/4/nombreBioDigesteurs#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nombreBioDigesteurs: <http://fasodbpedia-dataset/4/nombreBioDigesteurs#> .
+@base <http://fasodbpedia-dataset/4/nombreBioDigesteurs> .
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#aEteDenombreAnnee
+
+:aEteDenombreAnnee rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:range :Annee ;
+                   
+                   rdfs:domain :TotalNombreBio ;
+                   
+                   owl:propertyDisjointWith :nombreCorrespondantIntitule ;
+                   
+                   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreCorrespondantIntitule
+
+:nombreCorrespondantIntitule rdf:type owl:ObjectProperty ;
+                             
+                             rdfs:range :BioDigesteurs ;
+                             
+                             rdfs:domain :TotalNombreBio .
+
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdfs:range :BioDigesteurs ;
+                      
+                      rdfs:domain :TotalNombreBio .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#anneeBio
+
+:anneeBio rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Annee ;
+          
+          rdfs:range xsd:integer ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#intituleBio
+
+:intituleBio rdf:type owl:DatatypeProperty ;
+             
+             rdfs:domain :BioDigesteurs ;
+             
+             rdfs:range xsd:string ;
+             
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreIntitule
+
+:nombreIntitule rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :TotalNombreBio ;
+                
+                rdfs:range xsd:integer ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee
+
+:Annee rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs
+
+:BioDigesteurs rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio
+
+:TotalNombreBio rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2010 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2011 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2012 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2013 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2014 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2015 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2016 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017> rdf:type :Annee ,
+                                                                 owl:NamedIndividual ;
+                                                        
+                                                        :anneeBio 2017 .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul
+
+:Cumul rdf:type :BioDigesteurs ,
+                owl:NamedIndividual ;
+       
+       :intituleBio "Cumul" .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis
+
+:Nombre_de_bio_digesteurs_construis rdf:type :BioDigesteurs ,
+                                             owl:NamedIndividual ;
+                                    
+                                    :intituleBio "Nombre de bio-digesteurs construis" .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2011
+
+:cum2011 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 719 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2012
+
+:cum2012 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 2011 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2013
+
+:cum2013 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 4012 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2014
+
+:cum2014 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 5458 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2015
+
+:cum2015 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 6816 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2016
+
+:cum2016 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 8546 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2017
+
+:cum2017 rdf:type owl:NamedIndividual ;
+         
+         :nombreIntitule 9681 ;
+         
+         :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017> ;
+         
+         :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#cumul2010
+
+:cumul2010 rdf:type owl:NamedIndividual ;
+           
+           :nombreIntitule 110 ;
+           
+           :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010> ;
+           
+           :nombreCorrespondantIntitule :Cumul .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2010
+
+:nbre2010 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 110 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2011
+
+:nbre2011 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 609 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2012
+
+:nbre2012 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 1292 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2013
+
+:nbre2013 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 2001 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2014
+
+:nbre2014 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 1446 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2015
+
+:nbre2015 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 1358 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2016
+
+:nbre2016 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 1730 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2017
+
+:nbre2017 rdf:type owl:NamedIndividual ;
+          
+          :nombreIntitule 1135 ;
+          
+          :aEteDenombreAnnee <http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017> ;
+          
+          :nombreCorrespondantIntitule :Nombre_de_bio_digesteurs_construis .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Annee
+                :BioDigesteurs
+                :TotalNombreBio
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

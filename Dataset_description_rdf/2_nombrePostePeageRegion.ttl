@@ -1,0 +1,396 @@
+@prefix : <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fasodbpedia-dataset: <http://fasodbpedia-dataset/1#> .
+@prefix nombrePostePeageParRegion: <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/> .
+@base <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/> .
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/aEteDenombre
+
+:aEteDenombre rdf:type owl:ObjectProperty ;
+              
+              owl:propertyDisjointWith :seTrouveDans ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/seTrouveDans
+
+:seTrouveDans rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1#nomRegion
+
+fasodbpedia-dataset:nomRegion rdf:type owl:DatatypeProperty ;
+                              
+                              rdfs:domain fasodbpedia-dataset:Region ;
+                              
+                              rdfs:range xsd:string ;
+                              
+                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/anneePosteTrouve
+
+:anneePosteTrouve rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:domain fasodbpedia-dataset:Annee ;
+                  
+                  rdfs:range xsd:integer ;
+                  
+                  rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/nombrePosteTrouve
+
+:nombrePosteTrouve rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :NombrePoste ;
+                   
+                   rdfs:range xsd:integer ;
+                   
+                   rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1#Annee
+
+fasodbpedia-dataset:Annee rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/1#Region
+
+fasodbpedia-dataset:Region rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/NombrePoste
+
+:NombrePoste rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord> rdf:type owl:NamedIndividual .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest> rdf:type owl:NamedIndividual .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/1
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/1> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 1 ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                           
+                                                           :seTrouveDans :Centre_Sud ,
+                                                                         :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 2 ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                           
+                                                           :seTrouveDans :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> rdf:type fasodbpedia-dataset:Annee ,
+                                                                       owl:NamedIndividual ;
+                                                              
+                                                              :anneePosteTrouve 2015 .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> rdf:type fasodbpedia-dataset:Annee ,
+                                                                       owl:NamedIndividual ;
+                                                              
+                                                              :anneePosteTrouve 2016 .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/3
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/3> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 3 ;
+                                                           
+                                                           :seTrouveDans <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord> ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                           
+                                                           :seTrouveDans :Cascades ,
+                                                                         :Centre_Est ,
+                                                                         :Nord .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/4
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/4> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 4 ;
+                                                           
+                                                           :seTrouveDans <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest> ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/46
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/46> rdf:type :NombrePoste ,
+                                                                     owl:NamedIndividual ;
+                                                            
+                                                            :nombrePosteTrouve 46 ;
+                                                            
+                                                            :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                          <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                            
+                                                            :seTrouveDans :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/5
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/5> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 5 ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                           
+                                                           :seTrouveDans :Boucle_du_Mouhoun ,
+                                                                         :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/7
+
+<http://fasodbpedia-dataset/2/nombrePostePeageParRegion/7> rdf:type :NombrePoste ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           :nombrePosteTrouve 7 ;
+                                                           
+                                                           :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                                                                         <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+                                                           
+                                                           :seTrouveDans :Centre .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Boucle_du_Mouhoun
+
+:Boucle_du_Mouhoun rdf:type fasodbpedia-dataset:Region ,
+                            owl:NamedIndividual ;
+                   
+                   fasodbpedia-dataset:nomRegion "Boucle du Mouhoun" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Burkina_Faso
+
+:Burkina_Faso rdf:type owl:NamedIndividual ;
+              
+              fasodbpedia-dataset:nomRegion "Burkina Faso" ;
+              
+              :aEteDenombre <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015> ,
+                            <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2016> ;
+              
+              :seTrouveDans :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Cascades
+
+:Cascades rdf:type owl:NamedIndividual ;
+          
+          fasodbpedia-dataset:nomRegion "Cascades" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Centre
+
+:Centre rdf:type owl:NamedIndividual ;
+        
+        fasodbpedia-dataset:nomRegion "Centre" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Centre_Est
+
+:Centre_Est rdf:type owl:NamedIndividual ;
+            
+            fasodbpedia-dataset:nomRegion "Centre Est" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Centre_Nord
+
+:Centre_Nord rdf:type owl:NamedIndividual ;
+             
+             fasodbpedia-dataset:nomRegion "Centre Nord" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Centre_Ouest
+
+:Centre_Ouest rdf:type owl:NamedIndividual ;
+              
+              fasodbpedia-dataset:nomRegion "Centre Ouest" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Centre_Sud
+
+:Centre_Sud rdf:type owl:NamedIndividual ;
+            
+            fasodbpedia-dataset:nomRegion "Centre Sud" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Est
+
+:Est rdf:type owl:NamedIndividual ;
+     
+     fasodbpedia-dataset:nomRegion "Est" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Hauts_Bassins
+
+:Hauts_Bassins rdf:type owl:NamedIndividual ;
+               
+               fasodbpedia-dataset:nomRegion "Hauts Bassins" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Nord
+
+:Nord rdf:type owl:NamedIndividual ;
+      
+      fasodbpedia-dataset:nomRegion "Nord" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Plateau_Central
+
+:Plateau_Central rdf:type owl:NamedIndividual ;
+                 
+                 fasodbpedia-dataset:nomRegion "Plateau Central" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Sahel
+
+:Sahel rdf:type owl:NamedIndividual ;
+       
+       fasodbpedia-dataset:nomRegion "Sahel" .
+
+
+
+###  http://fasodbpedia-dataset/2/nombrePostePeageParRegion/Sud_Ouest
+
+:Sud_Ouest rdf:type owl:NamedIndividual ;
+           
+           fasodbpedia-dataset:nomRegion "Sud Ouest" .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( fasodbpedia-dataset:Annee
+                fasodbpedia-dataset:Region
+                :NombrePoste
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <http://fasodbpedia-dataset/2/nombrePostePeageParRegion/2015>
+                      )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

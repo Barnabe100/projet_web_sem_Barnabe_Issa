@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+<head>
+<variable name='Annee'/>
+<variable name='QuantiteSemence'/>
+<variable name='Region'/>
+</head>
+<results>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>104</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>115</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>237</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>115</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>237</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>1367</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Haut_bassins</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>149</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>227</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>264</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>304</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>3158</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>323</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>412</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>48</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>495</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>510</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>546</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>693</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>769</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Haut_bassins</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>7999</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Haut_bassins</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>894</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Haut_bassins</uri></binding>
+</result>
+<result>
+<binding name='Annee'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012</uri></binding>
+<binding name='QuantiteSemence'><literal datatype='http://www.w3.org/2001/XMLSchema#integer'>898</literal></binding>
+<binding name='Region'><uri>http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest</uri></binding>
+</result>
+</results>
+</sparql>

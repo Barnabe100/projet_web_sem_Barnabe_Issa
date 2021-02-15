@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/1/quantitesemenceanneeregion/" uri="1_quantiteSemenceRegionAnnee.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/2/nombrePostePeageParRegion/" uri="2_nombrePostePeageRegion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion" uri="3_longueurReseauTensionParRegion.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/4/nombreBioDigesteurs" uri="4_nombre-de-bio-digesteurs_4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure" uri="5_nombreTotalLocalitesElectrifieesStrcuture.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1613413627518" name="http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence" uri="6_tauxElectrificationMilieuResidence.owl"/>
+    </group>
+</catalog>

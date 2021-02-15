@@ -1,0 +1,935 @@
+@prefix : <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fasodbpedia-dataset: <http://fasodbpedia-dataset/1#> .
+@base <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/> .
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/estEvalueeEn
+
+:estEvalueeEn rdf:type owl:ObjectProperty ;
+              
+              rdfs:range fasodbpedia-dataset:Annee ;
+              
+              rdfs:domain :QuantiteSemence ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/estProduitePar
+
+:estProduitePar rdf:type owl:ObjectProperty ;
+                
+                rdfs:range fasodbpedia-dataset:Region ;
+                
+                rdfs:domain :QuantiteSemence ;
+                
+                rdfs:subPropertyOf :estProduitePar .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1#anneeDePrevision
+
+fasodbpedia-dataset:anneeDePrevision rdf:type owl:DatatypeProperty ;
+                                     
+                                     rdfs:domain fasodbpedia-dataset:Annee ;
+                                     
+                                     rdfs:range xsd:integer ;
+                                     
+                                     rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/1#nomRegion
+
+fasodbpedia-dataset:nomRegion rdf:type owl:DatatypeProperty ;
+                              
+                              rdfs:domain fasodbpedia-dataset:Region ;
+                              
+                              rdfs:range xsd:string ;
+                              
+                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/quantiteDeSemence
+
+:quantiteDeSemence rdf:type owl:DatatypeProperty ;
+                   
+                   rdfs:domain :QuantiteSemence ;
+                   
+                   rdfs:range xsd:integer ;
+                   
+                   rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1#Annee
+
+fasodbpedia-dataset:Annee rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/1#Region
+
+fasodbpedia-dataset:Region rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/QuantiteSemence
+
+:QuantiteSemence rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/104
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/104> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 104 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> ;
+                                                              
+                                                              :estProduitePar :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/107
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/107> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 107 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/111
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/111> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 111 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/115
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/115> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 115 ,
+                                                                                 237 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> ,
+                                                                            <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> ;
+                                                              
+                                                              :estProduitePar :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1153
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1153> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 1153 ;
+                                                               
+                                                               :estProduitePar :Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/119
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/119> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 119 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1367
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1367> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 1367 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> ;
+                                                               
+                                                               :estProduitePar :Haut_bassins .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1412
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1412> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 1412 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1480
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1480> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 1480 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/149
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/149> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 149 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> ;
+                                                              
+                                                              :estProduitePar :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/151
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/151> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 151 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/156
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/156> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 156 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/163
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/163> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 163 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1777
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/1777> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 1777 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2003
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2003> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2003 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2004
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2004> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2004 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2005
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2005> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2005 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2006
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2006> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2006 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2007
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2007> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2007 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2008
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2008> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2008 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2009
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2009> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2009 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2010
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2010> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2010 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2011 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2012 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2013 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               fasodbpedia-dataset:anneeDePrevision 2015 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2046
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2046> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 2046 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/225
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/225> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 225 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/227
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/227> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 227 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> ;
+                                                              
+                                                              :estProduitePar :Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2291
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2291> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 2291 ;
+                                                               
+                                                               :estProduitePar :Haut_bassins .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2574
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2574> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 2574 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/259
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/259> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 259 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/264
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/264> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 264 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> ;
+                                                              
+                                                              :estProduitePar :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/290
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/290> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 290 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/296
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/296> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 296 ;
+                                                              
+                                                              :estProduitePar :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2962
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2962> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 2962 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/304
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/304> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 304 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> ;
+                                                              
+                                                              :estProduitePar :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/305
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/305> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 305 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/315
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/315> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 315 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/3158
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/3158> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 3158 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> ;
+                                                               
+                                                               :estProduitePar :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/323
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/323> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 323 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> ;
+                                                              
+                                                              :estProduitePar :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/325
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/325> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 325 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/389
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/389> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 389 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/393
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/393> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 393 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/401
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/401> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 401 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/412
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/412> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 412 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> ;
+                                                              
+                                                              :estProduitePar :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/415
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/415> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 415 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/4382
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/4382> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 4382 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/441
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/441> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 48 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/48
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/48> rdf:type owl:NamedIndividual ;
+                                                             
+                                                             :quantiteDeSemence 48 ;
+                                                             
+                                                             :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> ;
+                                                             
+                                                             :estProduitePar :Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/490
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/490> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 490 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/495
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/495> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 495 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> ;
+                                                              
+                                                              :estProduitePar :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/510
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/510> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 510 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> ;
+                                                              
+                                                              :estProduitePar :Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/5196
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/5196> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 5196 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/539
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/539> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 539 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/546
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/546> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 546 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> ;
+                                                              
+                                                              :estProduitePar :Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/559
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/559> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 559 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/566
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/566> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 566 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/578
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/578> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 578 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/648
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/648> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 648 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/686
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/686> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 686 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/693
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/693> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 693 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> ;
+                                                              
+                                                              :estProduitePar :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/694
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/694> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 694 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/730
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/730> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 730 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/7435
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/7435> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 7435 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/769
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/769> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 769 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2015> ;
+                                                              
+                                                              :estProduitePar :Haut_bassins .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/779
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/779> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 779 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/7999
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/7999> rdf:type owl:NamedIndividual ;
+                                                               
+                                                               :quantiteDeSemence 7999 ;
+                                                               
+                                                               :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> ;
+                                                               
+                                                               :estProduitePar :Haut_bassins .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/800
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/800> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 800 ;
+                                                              
+                                                              :estProduitePar :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/840
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/840> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 840 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2011> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/847
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/847> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 847 .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/856
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/856> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 856 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/894
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/894> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 894 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2013> ;
+                                                              
+                                                              :estProduitePar :Haut_bassins .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/898
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/898> rdf:type owl:NamedIndividual ;
+                                                              
+                                                              :quantiteDeSemence 898 ;
+                                                              
+                                                              :estEvalueeEn <http://fasodbpedia-dataset/1/quantitesemenceanneeregion/2012> ;
+                                                              
+                                                              :estProduitePar :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/99
+
+<http://fasodbpedia-dataset/1/quantitesemenceanneeregion/99> rdf:type owl:NamedIndividual ;
+                                                             
+                                                             :quantiteDeSemence 99 ;
+                                                             
+                                                             :estProduitePar :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Nord
+
+:Centre_Nord rdf:type owl:NamedIndividual ;
+             
+             fasodbpedia-dataset:nomRegion "Centre Nord" .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Centre_Ouest
+
+:Centre_Ouest rdf:type owl:NamedIndividual ;
+              
+              fasodbpedia-dataset:nomRegion "Centre Ouest" .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Haut_bassins
+
+:Haut_bassins rdf:type owl:NamedIndividual ;
+              
+              fasodbpedia-dataset:nomRegion "Haut bassins" .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Nord
+
+:Nord rdf:type owl:NamedIndividual ;
+      
+      fasodbpedia-dataset:nomRegion "Nord" .
+
+
+
+###  http://fasodbpedia-dataset/1/quantitesemenceanneeregion/Sahel
+
+:Sahel rdf:type owl:NamedIndividual ;
+       
+       fasodbpedia-dataset:nomRegion "Sahel" .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( fasodbpedia-dataset:Annee
+                fasodbpedia-dataset:Region
+                :QuantiteSemence
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

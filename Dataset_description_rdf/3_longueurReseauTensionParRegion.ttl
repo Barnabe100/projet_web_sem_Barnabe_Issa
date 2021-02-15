@@ -1,0 +1,1649 @@
+@prefix : <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix longueurReseauHauteTensionRegion: <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#> .
+@base <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion> .
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#appartientA
+
+:appartientA rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :Reseau ;
+             
+             owl:propertyDisjointWith :correpondAnnee ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#correpondAnnee
+
+:correpondAnnee rdf:type owl:ObjectProperty ;
+                
+                rdfs:domain :Reseau ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#anneeDeMesure
+
+:anneeDeMesure rdf:type owl:DatatypeProperty ;
+               
+               rdfs:range xsd:integer ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#longueurReseau
+
+:longueurReseau rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :Reseau ;
+                
+                rdfs:range xsd:float .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nomRegion
+
+:nomRegion rdf:type owl:DatatypeProperty ;
+           
+           rdfs:domain :Region ;
+           
+           rdfs:range xsd:string ;
+           
+           rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region
+
+:Region rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau
+
+:Reseau rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#101
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#101> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 101 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#104
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#104> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 104 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#105
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#105> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 105 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#109
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#109> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 109 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#122
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#122> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 122 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#123
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#123> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 123 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#127
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#127> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 127 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#128
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#128> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 128 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#131
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#131> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 131 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#147
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#147> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 147 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#167
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#167> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 167 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#175
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#175> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 175 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#190
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#190> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 190 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#191
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#191> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 191 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#196
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#196> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 196 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#197
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#197> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 197 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#198
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#198> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 198 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#199
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#199> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 199 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#201
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#201> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 201 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2010 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2011 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2012 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2013 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2014 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2015 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2015 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> rdf:type owl:NamedIndividual ;
+                                                                     
+                                                                     :anneeDeMesure 2017 .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#202
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#202> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 202 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#233
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#233> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 233 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#234
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#234> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 234 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#248
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#248> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 248 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#254
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#254> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 254 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#260
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#260> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 260 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#266
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#266> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 266 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#273
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#273> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 273 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#28
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#28> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 28 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#280
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#280> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 280 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#282
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#282> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 282 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#285
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#285> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 285 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#292
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#292> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 292 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#295
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#295> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 295 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#296
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#296> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 296 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#309
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#309> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 309 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#31
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#31> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 31 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                   
+                                                                   :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#310
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#310> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 310 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#317
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#317> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 317 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#337
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#337> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 337 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#348
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#348> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 348 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#349
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#349> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 349 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#367
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#367> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 367 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#378
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#378> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 378 ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#38
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#38> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 38 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#385
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#385> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 385 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Centre_Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#387
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#387> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 387 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#388
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#388> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 388 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#39
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#39> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 39 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#394
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#394> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 394 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#41
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#41> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 41 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#427
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#427> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 427 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#43
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#43> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 43 ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#432
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#432> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 432 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Hauts_Bassins .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#44
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#44> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 44 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                   
+                                                                   :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#46
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#46> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 46 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#462
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#462> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 462 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#465
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#465> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 465 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#49
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#49> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 49 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                   
+                                                                   :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#496
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#496> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 496 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#53
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#53> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 53 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#54
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#54> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 54 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                   
+                                                                   :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#56
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#56> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 56 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                   
+                                                                   :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#566
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#566> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 566 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#59
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#59> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 59 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#638
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#638> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 638 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#662
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#662> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 662 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#69
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#69> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 69 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                   
+                                                                   :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#70
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#70> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 70 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                   
+                                                                   :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#704
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#704> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 704 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#708
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#708> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 708 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#71
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#71> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 71 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                   
+                                                                   :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#74
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#74> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 74 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                   
+                                                                   :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#744
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#744> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 744 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#76
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#76> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 76 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                   
+                                                                   :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#763
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#763> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 763 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#766
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#766> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 766 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Boucle_du_Mouhoun .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#783
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#783> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 783 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#787
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#787> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 787 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#84
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#84> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 84 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                   
+                                                                   :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#892
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#892> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 892 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#91
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#91> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 91 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#932
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#932> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 932 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#95
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#95> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 95 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+                                                                   
+                                                                   :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#961
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#961> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 961 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#97
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#97> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 97 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+                                                                   
+                                                                   :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#98
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#98> rdf:type owl:NamedIndividual ;
+                                                                   
+                                                                   :longueurReseau 98 ;
+                                                                   
+                                                                   :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+                                                                   
+                                                                   :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#981
+
+<http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#981> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    :longueurReseau 981 ;
+                                                                    
+                                                                    :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                                                                    
+                                                                    :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2010
+
+:BF2010 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 2083 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2011
+
+:BF2011 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 2297 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2012
+
+:BF2012 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 2665 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2013
+
+:BF2013 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 3220 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2014
+
+:BF2014 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 3452 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2015
+
+:BF2015 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 4243 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2016
+
+:BF2016 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 4967 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2017
+
+:BF2017 rdf:type owl:NamedIndividual ;
+        
+        :longueurReseau 5477 ;
+        
+        :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+        
+        :appartientA :Burkina_Faso .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun
+
+:Boucle_du_Mouhoun rdf:type :Region ,
+                            owl:NamedIndividual ;
+                   
+                   :nomRegion "Boucle du Mouhoun" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso
+
+:Burkina_Faso rdf:type :Region ,
+                       owl:NamedIndividual ;
+              
+              :nomRegion "Burkina Faso" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades
+
+:Cascades rdf:type :Region ,
+                   owl:NamedIndividual ;
+          
+          :nomRegion "Cascades" ;
+          
+          :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre
+
+:Centre rdf:type :Region ,
+                 owl:NamedIndividual ;
+        
+        :nomRegion "Centre" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est
+
+:Centre_Est rdf:type :Region ,
+                     owl:NamedIndividual ;
+            
+            :nomRegion "Centre Est" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord
+
+:Centre_Nord rdf:type :Region ,
+                      owl:NamedIndividual ;
+             
+             :nomRegion "Centre Nord" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest
+
+:Centre_Ouest rdf:type :Region ,
+                       owl:NamedIndividual ;
+              
+              :nomRegion "Centre Ouest" ;
+              
+              :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud
+
+:Centre_Sud rdf:type :Region ,
+                     owl:NamedIndividual ;
+            
+            :nomRegion "Centre Sud" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est
+
+:Est rdf:type :Region ,
+              owl:NamedIndividual ;
+     
+     :nomRegion "Est" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins
+
+:Hauts_Bassins rdf:type :Region ,
+                        owl:NamedIndividual ;
+               
+               :nomRegion "Hauts Bassins" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord
+
+:Nord rdf:type :Region ,
+               owl:NamedIndividual ;
+      
+      :nomRegion "Nord" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central
+
+:Plateau_Central rdf:type owl:NamedIndividual ;
+                 
+                 :nomRegion "Plateau Central" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel
+
+:Sahel rdf:type :Region ,
+                owl:NamedIndividual ;
+       
+       :nomRegion "Sahel" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest
+
+:Sud_Ouest rdf:type :Region ,
+                    owl:NamedIndividual ;
+           
+           :nomRegion "Sud Ouest" .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#cascades2015
+
+:cascades2015 rdf:type :Region ,
+                       owl:NamedIndividual ;
+              
+              :longueurReseau 43 ;
+              
+              :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+              
+              :appartientA :Cascades .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centre2011
+
+:centre2011 rdf:type owl:NamedIndividual ;
+            
+            :longueurReseau 38 ;
+            
+            :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+            
+            :appartientA :Centre .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreEst2013
+
+:centreEst2013 rdf:type owl:NamedIndividual ;
+               
+               :longueurReseau 260 ;
+               
+               :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+               
+               :appartientA :Centre_Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreOuest2017
+
+:centreOuest2017 rdf:type owl:NamedIndividual ;
+                 
+                 :longueurReseau 704 ;
+                 
+                 :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+                 
+                 :appartientA :Centre_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2012
+
+:centreSud2012 rdf:type owl:NamedIndividual ;
+               
+               :longueurReseau 101 ;
+               
+               :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+               
+               :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2015
+
+:centreSud2015 rdf:type owl:NamedIndividual ;
+               
+               :longueurReseau 282 ;
+               
+               :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+               
+               :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2017
+
+:centreSud2017 rdf:type owl:NamedIndividual ;
+               
+               :longueurReseau 310 ;
+               
+               :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+               
+               :appartientA :Centre_Sud .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2010
+
+:est2010 rdf:type owl:NamedIndividual ;
+         
+         :longueurReseau 98 ;
+         
+         :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010> ;
+         
+         :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2011
+
+:est2011 rdf:type owl:NamedIndividual ;
+         
+         :longueurReseau 97 ;
+         
+         :appartientA <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+         
+         :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2013
+
+:est2013 rdf:type owl:NamedIndividual ;
+         
+         :longueurReseau 105 ;
+         
+         :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013> ;
+         
+         :appartientA :Est .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2011
+
+:nord2011 rdf:type owl:NamedIndividual ;
+          
+          :longueurReseau 167 ;
+          
+          :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011> ;
+          
+          :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2015
+
+:nord2015 rdf:type owl:NamedIndividual ;
+          
+          :longueurReseau 427 ;
+          
+          :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+          
+          :appartientA :Nord .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#plateau2017
+
+:plateau2017 rdf:type owl:NamedIndividual ;
+             
+             :longueurReseau 122 ;
+             
+             :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017> ;
+             
+             :appartientA :Plateau_Central .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sahel2014
+
+:sahel2014 rdf:type owl:NamedIndividual ;
+           
+           :longueurReseau 69 ;
+           
+           :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+           
+           :appartientA :Sahel .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2012
+
+:sudOuest2012 rdf:type owl:NamedIndividual ;
+              
+              :longueurReseau 31 ;
+              
+              :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012> ;
+              
+              :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2014
+
+:sudOuest2014 rdf:type owl:NamedIndividual ;
+              
+              :longueurReseau 43 ;
+              
+              :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014> ;
+              
+              :appartientA :Sud_Ouest .
+
+
+
+###  http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2015
+
+:sudOuest2015 rdf:type owl:NamedIndividual ;
+              
+              :longueurReseau 43 ;
+              
+              :correpondAnnee <http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015> ;
+              
+              :appartientA :Sud_Ouest .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

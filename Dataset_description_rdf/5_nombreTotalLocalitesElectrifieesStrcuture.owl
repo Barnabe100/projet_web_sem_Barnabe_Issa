@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#"
+     xml:base="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nombreTotalLocaliteElectrifieeStructure="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#">
+    <owl:Ontology rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeConcernee -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeConcernee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite"/>
+        <rdfs:range rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#structureConcernee -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#structureConcernee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite"/>
+        <rdfs:range rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeComptage -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeComptage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nomStructure -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nomStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nombreLocalite -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nombreLocalite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+        <nomStructure>FDE</nomStructure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+        <nomStructure>SONABEL</nomStructure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#fde2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#fde2011">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#102 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#102">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#121 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#121">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">121</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#145 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#145">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">145</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#15 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#15">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#152 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#152">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#168 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#168">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#180 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#180">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#187 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#187">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeComptage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</anneeComptage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeComptage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anneeComptage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeComptage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anneeComptage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#206 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#206">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">206</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#229 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#229">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">229</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#24 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#24">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#249 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#249">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">249</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#256 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#256">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">256</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#375 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#375">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">375</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#38 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#38">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#396 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#396">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">396</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#422 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#422">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">422</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#47 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#47">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#65 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#65">
+        <anneeConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007"/>
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite></nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#85 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#85">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#88 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#88">
+        <structureConcernee rdf:resource="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE"/>
+        <nombreLocalite rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</nombreLocalite>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure"/>
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

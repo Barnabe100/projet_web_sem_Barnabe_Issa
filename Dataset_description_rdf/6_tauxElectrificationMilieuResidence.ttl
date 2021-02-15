@@ -1,0 +1,625 @@
+@prefix : <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix taucElectrificationMilieurDeResidence: <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#> .
+@base <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence> .
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#correspondAnnee
+
+:correspondAnnee rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:range <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ;
+                 
+                 rdfs:domain :TauxElectrification ;
+                 
+                 rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#milieuResidenceCorrespondant
+
+:milieuResidenceCorrespondant rdf:type owl:ObjectProperty ;
+                              
+                              rdfs:range :MilieuResidence ;
+                              
+                              rdfs:domain :TauxElectrification ;
+                              
+                              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#anneeEvaluation
+
+:anneeEvaluation rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:domain <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ;
+                 
+                 rdfs:range xsd:integer ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#intituleMilieu
+
+:intituleMilieu rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :MilieuResidence ;
+                
+                rdfs:range xsd:string ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#valeurTaux
+
+:valeurTaux rdf:type owl:DatatypeProperty ;
+            
+            rdfs:domain :TauxElectrification ;
+            
+            rdfs:range xsd:float ;
+            
+            rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#MilieuResidence
+
+:MilieuResidence rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#TauxElectrification
+
+:TauxElectrification rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#0
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#0> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 0 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2008> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#1
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#1> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 1 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2012> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 2 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2016> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2008
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2008> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2008 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2009
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2009> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2009 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2010
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2010> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2010 ;
+                                                                          
+                                                                          :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2011
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2011> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2011 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2012
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2012> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2012 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2013
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2013> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2013 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2014
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2014> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2014 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2015
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2015> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2015 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2016
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2016> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2016 .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2017
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2017> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                   owl:NamedIndividual ;
+                                                                          
+                                                                          :anneeEvaluation 2017 ;
+                                                                          
+                                                                          :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#4
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#4> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 4 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2010> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#45
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#45> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 45 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2008> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#46
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#46> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 46 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2011> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#47
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#47> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 47 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2009> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#5
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#5> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 5 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2009> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#51
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#51> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 51 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2013> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#54
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#54> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 54 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2015> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#56
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#56> rdf:type owl:NamedIndividual ;
+                                                                        
+                                                                        :valeurTaux 56 ;
+                                                                        
+                                                                        :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2017> ;
+                                                                        
+                                                                        :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#7
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#7> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 7 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2014> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#8
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#8> rdf:type owl:NamedIndividual ;
+                                                                       
+                                                                       :valeurTaux 8 ;
+                                                                       
+                                                                       :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2014> ;
+                                                                       
+                                                                       :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> rdf:type :MilieuResidence ,
+                                                                                                              owl:NamedIndividual ;
+                                                                                                     
+                                                                                                     :intituleMilieu "Taux delectrification national" .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> rdf:type :MilieuResidence ,
+                                                                                                           owl:NamedIndividual ;
+                                                                                                  
+                                                                                                  :intituleMilieu "Taux delectrification rural" .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain
+
+<http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_urbain> rdf:type :MilieuResidence ,
+                                                                                                            owl:NamedIndividual ;
+                                                                                                   
+                                                                                                   :intituleMilieu "Taux delectrification urbain" .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2008
+
+:nat2008 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 12 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2008> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2009
+
+:nat2009 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 6 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2009> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2010
+
+:nat2010 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 13 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2010> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2011
+
+:nat2011 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 7 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2011> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2012
+
+:nat2012 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 13 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2012> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2013
+
+:nat2013 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 6 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2013> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2014
+
+:nat2014 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 15 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2014> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2015
+
+:nat2015 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 6 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2015> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2016
+
+:nat2016 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 16 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2016> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#nat2017
+
+:nat2017 rdf:type owl:NamedIndividual ;
+         
+         :valeurTaux 4 ;
+         
+         :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2017> ;
+         
+         :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_national> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2010
+
+:rural2010 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 1 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2010> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2011
+
+:rural2011 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 1 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2011> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2012
+
+:rural2012 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 2 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2012> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2013
+
+:rural2013 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 1 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2013> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2015
+
+:rural2015 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 1 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2015> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2016
+
+:rural2016 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 9 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2016> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+###  http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#rural2017
+
+:rural2017 rdf:type owl:NamedIndividual ;
+           
+           :valeurTaux 2 ;
+           
+           :correspondAnnee <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#2017> ;
+           
+           :milieuResidenceCorrespondant <http://fasodbpedia-dataset/6/taucElectrificationMilieurDeResidence#Taux_d'electrification_rural> .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee>
+                :MilieuResidence
+                :TauxElectrification
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

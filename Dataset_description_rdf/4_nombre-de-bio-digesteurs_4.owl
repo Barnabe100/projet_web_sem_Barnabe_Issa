@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://fasodbpedia-dataset/4/nombreBioDigesteurs#"
+     xml:base="http://fasodbpedia-dataset/4/nombreBioDigesteurs"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nombreBioDigesteurs="http://fasodbpedia-dataset/4/nombreBioDigesteurs#">
+    <owl:Ontology rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#aEteDenombreAnnee -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#aEteDenombreAnnee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+        <rdfs:range rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <owl:propertyDisjointWith rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreCorrespondantIntitule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreCorrespondantIntitule -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreCorrespondantIntitule">
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+        <rdfs:range rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+        <rdfs:range rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#anneeBio -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#anneeBio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#intituleBio -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#intituleBio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreIntitule -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nombreIntitule">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+        <intituleBio>Cumul</intituleBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+        <intituleBio>Nombre de bio-digesteurs construis</intituleBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2011">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">719</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2012">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2013">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4012</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2014">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5458</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2015">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6816</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2016 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2016">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8546</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cum2017">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9681</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#cumul2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#cumul2010">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Cumul"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2010">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2011">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">609</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2012">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1292</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2013">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2014">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1446</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2015">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1358</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2016 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2016">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1730</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#nbre2017">
+        <aEteDenombreAnnee rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017"/>
+        <nombreCorrespondantIntitule rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Nombre_de_bio_digesteurs_construis"/>
+        <nombreIntitule rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1135</nombreIntitule>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2010">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2011">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2012">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2013">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2014">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2015">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2016">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#2017">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+        <anneeBio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anneeBio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee"/>
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#BioDigesteurs"/>
+            <rdf:Description rdf:about="http://fasodbpedia-dataset/4/nombreBioDigesteurs#TotalNombreBio"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

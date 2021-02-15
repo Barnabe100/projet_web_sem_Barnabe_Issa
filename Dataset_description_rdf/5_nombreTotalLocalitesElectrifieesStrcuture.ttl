@@ -1,0 +1,422 @@
+@prefix : <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nombreTotalLocaliteElectrifieeStructure: <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#> .
+@base <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure> .
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeConcernee
+
+:anneeConcernee rdf:type owl:ObjectProperty ;
+                
+                rdfs:range <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ;
+                
+                rdfs:domain :TotalLocalite ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#structureConcernee
+
+:structureConcernee rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:range :Structure ;
+                    
+                    rdfs:domain :TotalLocalite ;
+                    
+                    rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#anneeComptage
+
+:anneeComptage rdf:type owl:DatatypeProperty ;
+               
+               rdfs:domain <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ;
+               
+               rdfs:range xsd:integer ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nomStructure
+
+:nomStructure rdf:type owl:DatatypeProperty ;
+              
+              rdfs:domain :Structure ;
+              
+              rdfs:range xsd:string ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#nombreLocalite
+
+:nombreLocalite rdf:type owl:DatatypeProperty ;
+                
+                rdfs:domain :TotalLocalite ;
+                
+                rdfs:range xsd:integer ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee
+
+<http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#Structure
+
+:Structure rdf:type owl:Class .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#TotalLocalite
+
+:TotalLocalite rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#102
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#102> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 102 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#121
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#121> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 121 ;
+                                                                           
+                                                                           :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#145
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#145> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 145 ;
+                                                                           
+                                                                           :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010> ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#15
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#15> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 15 ;
+                                                                          
+                                                                          :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007> ;
+                                                                          
+                                                                          :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#152
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#152> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 152 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#168
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#168> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 168 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#180
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#180> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 180 ;
+                                                                           
+                                                                           :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014> ;
+                                                                           
+                                                                           :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#187
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#187> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 187 ;
+                                                                           
+                                                                           :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                     owl:NamedIndividual ;
+                                                                            
+                                                                            :anneeComptage 2007 .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                     owl:NamedIndividual ;
+                                                                            
+                                                                            :anneeComptage 2010 .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014> rdf:type <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee> ,
+                                                                                     owl:NamedIndividual ;
+                                                                            
+                                                                            :anneeComptage 2014 .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#206
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#206> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 206 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#229
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#229> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 229 ;
+                                                                           
+                                                                           :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#24
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#24> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 24 ;
+                                                                          
+                                                                          :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#249
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#249> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 249 ;
+                                                                           
+                                                                           :structureConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014> ;
+                                                                           
+                                                                           :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2014> .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#256
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#256> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 256 ;
+                                                                           
+                                                                           :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#375
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#375> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 375 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#38
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#38> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 38 ;
+                                                                          
+                                                                          :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#396
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#396> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 396 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#422
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#422> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           :nombreLocalite 422 ;
+                                                                           
+                                                                           :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#47
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#47> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 47 ;
+                                                                          
+                                                                          :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2010> ;
+                                                                          
+                                                                          :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#65
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#65> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite "" ;
+                                                                          
+                                                                          :anneeConcernee <http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#2007> ;
+                                                                          
+                                                                          :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#85
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#85> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 85 ;
+                                                                          
+                                                                          :structureConcernee :SONABEL .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#88
+
+<http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#88> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          :nombreLocalite 88 ;
+                                                                          
+                                                                          :structureConcernee :FDE .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#FDE
+
+:FDE rdf:type :Structure ,
+              owl:NamedIndividual ;
+     
+     :nomStructure "FDE" .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#SONABEL
+
+:SONABEL rdf:type :Structure ,
+                  owl:NamedIndividual ;
+         
+         :nomStructure "SONABEL" .
+
+
+
+###  http://fasodbpedia-dataset/5/nombreTotalLocaliteElectrifieeStructure#fde2011
+
+:fde2011 rdf:type owl:NamedIndividual ;
+         
+         :nombreLocalite 65 ;
+         
+         :structureConcernee :FDE .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://fasodbpedia-dataset/4/nombreBioDigesteurs#Annee>
+                :Structure
+                :TotalLocalite
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

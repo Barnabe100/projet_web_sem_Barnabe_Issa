@@ -1,0 +1,1429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#"
+     xml:base="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:longueurReseauHauteTensionRegion="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#">
+    <owl:Ontology rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#appartientA -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#appartientA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau"/>
+        <owl:propertyDisjointWith rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#correpondAnnee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#correpondAnnee -->
+
+    <owl:ObjectProperty rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#correpondAnnee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#anneeDeMesure -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#anneeDeMesure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#longueurReseau -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#longueurReseau">
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nomRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nomRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau -->
+
+    <owl:Class rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Reseau"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2010">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2083</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2011">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2297</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2012">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2665</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2013">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3220</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2014">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3452</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2015">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4243</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2016 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2016">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4967</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#BF2017">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5477</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Boucle du Mouhoun</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Burkina_Faso">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Burkina Faso</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <nomRegion>Cascades</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Centre</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Centre Est</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Centre Nord</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <nomRegion>Centre Ouest</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Centre Sud</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Est</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Hauts Bassins</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Nord</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central">
+        <nomRegion>Plateau Central</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Sahel</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <nomRegion>Sud Ouest</nomRegion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#cascades2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#cascades2015">
+        <rdf:type rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Region"/>
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centre2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centre2011">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreEst2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreEst2013">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">260</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreOuest2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreOuest2017">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">704</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2012">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2015">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#centreSud2017">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">310</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2010">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2011">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#est2013">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2011">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">167</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#nord2015">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">427</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#plateau2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#plateau2017">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sahel2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sahel2014">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2012">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2014">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#sudOuest2015">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#101 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#101">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#104 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#104">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#105 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#105">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#109 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#109">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">109</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#122 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#122">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">122</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#123 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#123">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#127 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#127">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#128 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#128">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#131 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#131">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#147 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#147">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">147</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#167 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#167">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">167</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#175 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#175">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#190 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#190">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#191 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#191">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#196 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#196">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">196</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#197 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#197">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">197</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#198 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#198">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">198</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#199 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#199">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#201 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#201">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017">
+        <anneeDeMesure rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</anneeDeMesure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#202 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#202">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#233 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#233">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">233</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#234 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#234">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#248 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#248">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">248</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#254 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#254">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">254</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#260 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#260">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">260</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#266 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#266">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">266</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#273 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#273">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">273</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#28 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#28">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#280 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#280">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#282 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#282">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">282</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#285 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#285">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#292 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#292">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">292</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#295 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#295">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#296 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#296">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">296</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#309 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#309">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">309</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#31 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#31">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#310 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#310">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">310</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#317 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#317">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">317</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#337 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#337">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">337</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#348 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#348">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">348</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#349 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#349">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">349</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#367 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#367">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">367</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#378 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#378">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#38 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#38">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#385 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#385">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">385</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#387 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#387">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">387</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#388 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#388">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">388</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#39 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#39">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#394 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#394">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">394</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#41 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#41">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#427 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#427">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">427</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#43 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#43">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#432 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#432">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Hauts_Bassins"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">432</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#44 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#44">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#46 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#46">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#462 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#462">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">462</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#465 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#465">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Nord"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">465</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#49 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#49">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#496 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#496">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">496</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#53 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#53">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#54 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#54">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sud_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#56 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#56">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Cascades"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#566 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#566">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">566</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#59 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#59">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#638 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#638">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">638</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#662 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#662">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Ouest"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">662</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#69 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#69">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#70 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#70">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#704 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#704">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">704</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#708 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#708">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">708</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#71 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#71">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Sahel"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#74 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#74">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#744 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#744">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">744</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#76 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#76">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#763 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#763">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">763</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#766 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#766">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Boucle_du_Mouhoun"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">766</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#783 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#783">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">783</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#787 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#787">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2013"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">787</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#84 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#84">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Plateau_Central"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#892 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#892">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2014"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">892</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#91 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#91">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#932 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#932">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2015"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">932</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#95 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#95">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2011"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#961 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#961">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2016"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">961</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#97 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#97">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Sud"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2010"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#98 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#98">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre_Est"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2012"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98</longueurReseau>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#981 -->
+
+    <owl:NamedIndividual rdf:about="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#981">
+        <appartientA rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#Centre"/>
+        <correpondAnnee rdf:resource="http://fasodbpedia-dataset/3/longueurReseauHauteTensionRegion#2017"/>
+        <longueurReseau rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">981</longueurReseau>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

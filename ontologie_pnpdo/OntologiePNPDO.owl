@@ -1,0 +1,1054 @@
+@prefix : <http://www.semanticweb.org/issa/ontologies/2021/2/untitled-ontology-8#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo> .
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#PeutEtre
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#PeutEtre> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Description
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Description> rdf:type owl:DatatypeProperty ;
+                                                                      
+                                                                      rdfs:domain <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                  <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ;
+                                                                      
+                                                                      rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fichier
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fichier> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Libellé
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Libellé> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Admin
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Admin> rdf:type owl:Class ;
+                                                                
+                                                                rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Author> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Author
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Author> rdf:type owl:Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> rdf:type owl:Class ;
+                                                                        
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#PeutEtre> ;
+                                                                                          owl:someValuesFrom <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs>
+                                                                                        ] .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Date_Changed
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Date_Changed> rdf:type owl:Class ;
+                                                                       
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> rdf:type owl:Class ;
+                                                                   
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> ,
+                                                                                   <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ressources> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> rdf:type owl:Class ;
+                                                                              
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Licenses
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Licenses> rdf:type owl:Class ;
+                                                                   
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ressources
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ressources> rdf:type owl:Class ;
+                                                                     
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> rdf:type owl:Class ;
+                                                               
+                                                               rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> ,
+                                                                               <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Producteurs> .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> rdf:type owl:Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeux_de_données> .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Agriculture
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Agriculture> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Autre
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Autre> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Banque_Africaine_de_Développement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Banque_Africaine_de_Développement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                     <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Banque_Mondiale
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Banque_Mondiale> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                   <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                   owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Bobo-Dioulasso
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Bobo-Dioulasso> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Budget
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Budget> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Centre_for_International_Earth_Science_Information_Network
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Centre_for_International_Earth_Science_Information_Network> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                              <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                              owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Collectivités_territoriales
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Collectivités_territoriales> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Commission_Electorale_Nationale_Independante
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Commission_Electorale_Nationale_Independante> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Communication
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Communication> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Céréales
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Céréales> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Demographie
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Demographie> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Eau_et_environnement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Eau_et_environnement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ecole
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ecole> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Economie_et_finances
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Economie_et_finances> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Education
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Education> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Election
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Election> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Electricité
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Electricité> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Electrifiées
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Electrifiées> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Elevage
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Elevage> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Energie
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Energie> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Enquête
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Enquête> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Environnement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Environnement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Essence_super_91
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Essence_super_91> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                    owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Etablissement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Etablissement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Exportation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Exportation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fecondité
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fecondité> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fonio
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fonio> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Foresterie
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Foresterie> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                              owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fumure
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Fumure> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#IPI
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#IPI> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Igname
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Igname> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Importation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Importation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Industrie
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Industrie> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Infrastructure
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Infrastructure> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Institut_Nationale_de_la_Statistique_et_de_la_Démographie
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Institut_Nationale_de_la_Statistique_et_de_la_Démographie> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                             <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Institut_des_Sciences_des_Sociétés
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Institut_des_Sciences_des_Sociétés> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                      <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                      owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeunesse_et_finances
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Jeunesse_et_finances> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Maïs
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Maïs> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Mil
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Mil> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Mines_et_carrières
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Mines_et_carrières> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                      <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                      owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_Justice
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_Justice> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                        <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Administration_Territoriale_et_de_la_Sécurité
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Administration_Territoriale_et_de_la_Sécurité> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Agriculture_et_des_Aménagements_Hydro-agricoles
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Agriculture_et_des_Aménagements_Hydro-agricoles> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                  <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Eau_et_de_l'Assainissement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Eau_et_de_l'Assainissement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                             <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Economie,_des_Finances_et_du_Développement
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Economie,_des_Finances_et_du_Développement> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                             <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Education_Nationale_et_de_l'Alphabétisation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Education_Nationale_et_de_l'Alphabétisation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                              <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                              owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Energies
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Energies> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                           <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Enseignement_Supérieur_et_de_la_Recherche_Scientifique_et_de_l'Innovation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Enseignement_Supérieur_et_de_la_Recherche_Scientifique_et_de_l'Innovation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                                            <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Environnement,_de_l'Economie_Verte_et_du_Changement_Climatique
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'Environnement,_de_l'Economie_Verte_et_du_Changement_Climatique> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                                 <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'ation_Sociale_et_de_la_Solidarité_Nationale
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_l'ation_Sociale_et_de_la_Solidarité_Nationale> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                              <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                              owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Jeunesse,_de_la_Formation_Professionnelle_et_de_l'Emploi
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Jeunesse,_de_la_Formation_Professionnelle_et_de_l'Emploi> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                            <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Promotion_de_la_Femme_et_du_Genre
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Promotion_de_la_Femme_et_du_Genre> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                     <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Recherche_Scientifique_et_de_l'Innovation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Recherche_Scientifique_et_de_l'Innovation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                             <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Santé
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_Santé> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                         <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_culture_et_du_Tourisme
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_de_la_culture_et_du_Tourisme> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                          <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_Infrastructures_du_Désenclavement_et_des_Transports
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_Infrastructures_du_Désenclavement_et_des_Transports> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                     <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_Ressources_Animales_et_Halieutiques
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_Ressources_Animales_et_Halieutiques> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                     <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_mines_et_des_Carrières
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_des_mines_et_des_Carrières> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                        <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_du_Développement_de_l'Economie_numérique_et_des_Postes
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ministère_du_Développement_de_l'Economie_numérique_et_des_Postes> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                                                    <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                    owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#NPK
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#NPK> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Observatoire_National_de_l'Environnement_et_du_Développement_Durable_(ONEDD)
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Observatoire_National_de_l'Environnement_et_du_Développement_Durable_(ONEDD)> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#OpenStreetMap
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#OpenStreetMap> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                 <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                 owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Open_Burkina
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Open_Burkina> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ouagadougou
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Ouagadougou> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#PIB
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#PIB> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Paludisme
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Paludisme> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Patate
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Patate> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Pauvreté
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Pauvreté> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Phosphate
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Phosphate> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Population
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Population> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                              owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Premier_Ministère
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Premier_Ministère> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Presticides
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Presticides> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                               owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Prix
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Prix> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Programme_d'Appui_aux_Collectivités_Territoriales_(PACT)
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Programme_d'Appui_aux_Collectivités_Territoriales_(PACT)> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Programme_d'Investissement_Forestier
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Programme_d'Investissement_Forestier> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Présidence_du_Faso
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Présidence_du_Faso> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                      owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Riz
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Riz> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Rodenticides
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Rodenticides> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#SAHEL_DATABANK
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#SAHEL_DATABANK> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                  <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#SHP
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#SHP> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Santé
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Santé> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sexe
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sexe> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Smart_Zogore
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Smart_Zogore> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Société_Nationale_d'Electricité_du_Burkna_(SONABEL)
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Société_Nationale_d'Electricité_du_Burkna_(SONABEL)> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Soja
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Soja> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sorgho
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sorgho> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sécurité
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sécurité> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sécurité_publique
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sécurité_publique> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sésame
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Sésame> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                          owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#TIC,_Télécommunications_et_Postes
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#TIC,_Télécommunications_et_Postes> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Telecommunication
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Telecommunication> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tourisme_et_culture
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tourisme_et_culture> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tourisme_hôtelier
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tourisme_hôtelier> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                     owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Transports
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Transports> rdf:type owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Urée
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Urée> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#WEB
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#WEB> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Water_Point_Data_Exchange-WPDX
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Water_Point_Data_Exchange-WPDX> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                                                  <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                                                  owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#WorldPop
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#WorldPop> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Contributeurs> ,
+                                                                            <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#age
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#age> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#alphabetisation
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#alphabetisation> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                                   owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#animaux
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#animaux> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#arachides
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#arachides> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#chase
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#chase> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#commerce
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#commerce> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#coton
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#coton> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#csv
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#csv> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#education
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#education> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                             owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#election
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#election> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Thèmes> ,
+                                                                            owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#geojson
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#geojson> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                           owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#html
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#html> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#jpg
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#jpg> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#json
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#json> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#kml
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#kml> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#niébé
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#niébé> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Tags> ,
+                                                                         owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#ods
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#ods> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#pdf
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#pdf> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xls
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xls> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xlsx
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xlsx> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xlxs
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#xlxs> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                        owl:NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#zip
+
+<http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#zip> rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Formats_disponibles> ,
+                                                                       owl:NamedIndividual .
+
+
+
+[ rdf:type <http://www.semanticweb.org/issa/ontologies/2021/2/pnpdo#Editeurs>
+] .
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
